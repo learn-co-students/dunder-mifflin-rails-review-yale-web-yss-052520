@@ -1,0 +1,14 @@
+<h1>Create New Employee</h1> 
+
+<%# flash[:first] %>
+<% if flash[:errors] %>
+    <ul>
+    <% flash[:errors].each do |error| %>
+        <li style="color: red">
+            <%= error%>
+        </li>
+    <% end %>
+    </ul>
+<% end %>
+
+<%= render 'form' %> 
