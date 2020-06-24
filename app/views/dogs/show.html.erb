@@ -1,0 +1,16 @@
+<h1>Dog Show Page</h1>
+<label>Name:</label>
+<p><%=@dog.name%></p>
+<br>
+<label>Breed:</label>
+<p><%=@dog.breed%></p>
+<br>
+<label>Age:</label>
+<p><%=@dog.age%></p>
+<br>
+
+<ul>
+<%for employee in @dog.employees%>
+<li><%= link_to employee.to_s, employee_path(employee)%></li>
+<%end%>
+</ul>
