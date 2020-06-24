@@ -1,0 +1,8 @@
+<h1>Dunder Mifflin Dogs</h1>
+<ul>
+<% @dogs.each do |dog| %>
+<li><%= link_to dog.name, dog_path(dog) %>, <%= dog.employee_count %></li>
+<% end %>
+</ul>
+
+<%= link_to "Regular Dog Page", dogs_path %>

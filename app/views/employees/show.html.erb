@@ -1,0 +1,21 @@
+<h1><%= @employee.to_s %></h1>
+
+<img src= "<%= @employee.img_url %>">
+<table>
+    <tr>
+        <td>Alias</td>
+        <td><%= @employee.alias %></td>
+    </tr>
+    <tr>
+        <td>Title</td>
+        <td><%= @employee.title %></td>
+    </tr>
+    <tr>
+        <td>Office</td>
+        <td><%= @employee.office %></td>
+    </tr>
+    <tr>
+        <td>Dog</td>
+        <td><%= link_to @employee.dog.name, dog_path(@employee.dog) %></td>
+    </tr>
+</table>
