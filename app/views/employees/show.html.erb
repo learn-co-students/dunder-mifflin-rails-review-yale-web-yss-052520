@@ -1,0 +1,8 @@
+
+
+<img src= "<%= @employee.img_url %>" alt="Employee's Picture"><br>
+Name: <%= @employee.to_s %><br>
+Alias: <%= @employee.alias %><br>
+Title: <%= @employee.title %><br>
+Office: <%= @employee.office %><br>
+Dog: <%= link_to @employee.dog.name, dog_path(@employee.dog) %>
