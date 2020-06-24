@@ -1,0 +1,9 @@
+<h3> Name: <%="#{@employee.first_name} #{@employee.last_name}" %> </h3>
+<h3> Alias: <%= @employee.alias %></h3>
+<h3> Title: <%= @employee.title %></h3>
+<h3> Office: <%= @employee.office %></h3>
+
+<%= button_to "New Employee", { :action => "new" }, :method => :get %>
+<%= button_to "Edit Employee", { :action => "edit" }, :method => :get %>
+
+<img src="<%= @employee.img_url %>" alt="Photo/Image of <%= "#{@employee.first_name} #{@employee.last_name}"%>" >    
