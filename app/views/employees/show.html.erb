@@ -1,0 +1,19 @@
+<h1> <%= @employee.full_name %> </h1>
+
+<img src=<%= @employee.img_url %>><br>
+
+<% if @employee.alias %>
+<label>Alias:</label>
+<%= @employee.alias %>
+<%end%>
+
+<br>
+<label>Title:</label>
+<%= @employee.title %>
+<br>
+<label>Office:</label>
+<%= @employee.office %>
+<br>
+<label>Dog:</label>
+<%= link_to @employee.dog.name, dog_path(@employee.dog) %>
+
