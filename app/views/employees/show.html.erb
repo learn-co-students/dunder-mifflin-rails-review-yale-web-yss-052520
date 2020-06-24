@@ -1,0 +1,12 @@
+<h1> Employee Attributes </h1>
+
+First Name: <%= @employee.first_name %><br>
+Last Name: <%= @employee.last_name %><br>
+Alias: <%= @employee.alias %><br>
+Title: <%= @employee.title %><br>
+Office: <%= @employee.office %><br>
+Dog Name: <%= @employee.dog.name %><br>
+Image: <img src= <%= @employee.img_url %>><br>
+
+<br>
+<%=link_to "Edit Form", edit_employee_path(@employee)%>
