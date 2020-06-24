@@ -1,0 +1,16 @@
+<img src="<%=@employee.img_url%>"/>
+<h4>Name: <%= @employee.name%></h4>
+<h4>Alias: <%= @employee.alias%></h4>
+<h4>Title: <%= @employee.title%></h4>
+<h4>Office: <%= @employee.office%></h4>
+<h4>Dog: <%= @employee.dog.name%></h4>
+
+<%= form_for @employee, method: :delete do |f| %>
+    <%= f.submit "Fire This Employee!" %>
+<% end %>
+
+<br>
+
+<form method="get" action="/employees">
+    <button type="submit">Return to All the Employees!</button>
+</form>

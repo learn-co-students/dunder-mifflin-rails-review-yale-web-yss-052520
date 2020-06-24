@@ -1,0 +1,14 @@
+<h3>List of all the employees: </h3>
+
+<ul>
+<% @employees.each do |employee| %>
+    <li>
+        <%= link_to employee.name, employee_path(employee) %>
+    </li>
+<% end %>
+</ul>
+
+
+<form method="get" action="/dogs">
+    <button type="submit">Check Out All the Dogs!</button>
+</form>

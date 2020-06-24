@@ -1,0 +1,13 @@
+<h3>List of all the dogs: </h3>
+
+<ul>
+<% @dogs.each do |dog| %>
+    <li>
+        <%= link_to dog.name, "/dogs/#{dog.id}" %>
+    </li>
+<% end %>
+</ul>
+
+<form method="get" action="/employees">
+    <button type="submit">Check Out All the Employees!</button>
+</form>
